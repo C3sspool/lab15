@@ -1,3 +1,3 @@
 export default function Contacts() {
-  return <p>+7 (123) 456-78-90</p>;
+  return <p>+8 (989) 523-07-48</p>;
 }

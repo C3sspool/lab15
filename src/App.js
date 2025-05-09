@@ -13,7 +13,6 @@ function App() {
     <Router>
       <div className="app-container">
         <Head />
-        
         <Routes>
           <Route path="/" element={<Main />}>
             <Route index element={<News />} />
@@ -22,7 +21,6 @@ function App() {
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
-
         <Footer />
       </div>
     </Router>

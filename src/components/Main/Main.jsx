@@ -1,19 +1,25 @@
+import React from 'react';
 import { Outlet } from 'react-router-dom';
 import './Main.css';
+import exampleImage from '../../assets/section-image.jpg'; // Путь к вашему изображению
 
 export default function Main() {
   return (
     <main className="main-grid">
       <section className="section">
-        <img src="/placeholder.jpg" alt="Example" />
+        <img 
+          src={exampleImage} 
+          alt="Пример изображения" 
+          className="section-image"
+        />
       </section>
       
       <article className="article">
-        <Outlet /> {/* Здесь будет отображаться контент страниц */}
+        <Outlet />
       </article>
       
       <aside className="aside">
-        <p>Иванов Иван Иванович</p>
+        <p>Валевач Олег Сергеевич</p>
       </aside>
     </main>
   );

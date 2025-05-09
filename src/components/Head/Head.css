@@ -1,4 +1,7 @@
 .header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
   background: #f0f0f0;
   padding: 1rem;
   position: fixed;
@@ -8,17 +11,8 @@
 }
 
 nav {
+  grid-column: 2 / 3;
   display: flex;
-  gap: 2rem;
   justify-content: center;
-}
-
-nav a {
-  color: #333;
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-}
-
-nav a:hover {
-  background: #ddd;
+  gap: 2rem;
 }
